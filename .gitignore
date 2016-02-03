@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+.tmp
+.git
+node_modules
+plugins
+platforms
+src/common/config/env/development.json
+src/common/config/env/production.json
+.settings
+*.log

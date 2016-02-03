@@ -1,0 +1,11 @@
+<ion-view view-title="{{vm.$stateParams.cat | capitalize}}">
+  <ion-nav-buttons side="secondary">
+   <button class="button button-icon icon ion-ios-search-strong" ng-click="vm.showFilterBar()"></button>
+ </ion-nav-buttons>
+  <ion-content delegate-handle="example-scroller" elastic-header=".{{ vm.elasticHeaderClass }}" overflow-scroll="true">
+    <header style="background-image:url(assets/cropped-parasol.jpg);" class="background-image {{ vm.elasticHeaderClass }}"></header>
+    <ion-refresher on-refresh="vm.pullToRefresh()"></ion-refresher>
+    <article-list-item ng-repeat="item in vm.posts | orderBy:'-date' track by item.id" article="item"></article-list-item>
+    <ion-infinite-scroll on-infinite="vm.loadMore()" distance="20%" ng-if="!vm.loadComplete && vm.isReady"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

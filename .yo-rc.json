@@ -1,0 +1,10 @@
+{
+  "generator-ionic-webpack": {
+    "appName": "Touriscopie",
+    "menu": true,
+    "model": "js-data",
+    "formly": false,
+    "json-server": true,
+    "auth": false
+  }
+}

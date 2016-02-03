@@ -1,0 +1,5 @@
+{
+  "api": {
+    "basePath": "http://localhost/wp-json/wp/v2/"
+  }
+}

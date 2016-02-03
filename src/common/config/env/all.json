@@ -1,0 +1,6 @@
+{
+  "crud": {
+    "itemPerPage": 3
+  },
+  "defaultCategory": "editorial"
+}

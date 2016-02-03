@@ -1,0 +1,29 @@
+//Form validation errors
+@import 'styles/ionic';
+//@import 'lib/ionic-material/scss/index.scss';
+@import 'lib/ionic-filter-bar/scss/ionic.filter.bar.scss';
+
+.scroll-content{
+  top: 0 !important;
+  bottom: 0 !important;
+  padding-top: 44px !important;
+}
+
+.background-image {
+   background-size: cover;
+   background-position: center;
+   height: 50vw;
+}
+
+.content {
+   background-color: white;
+   position: absolute;
+}
+
+.bar-positive  {
+  background-color: rgba(44, 157, 199, 0.4) !important;
+}
+
+.title {
+  font-size: 12px !important;
+}

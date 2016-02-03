@@ -1,0 +1,12 @@
+<ion-list>
+  <header style="text-align:center; height:100px;">
+    Logo
+  </header>
+  <ion-item class="item item-divider">
+    Categories
+  </ion-item>
+  <ion-item ng-repeat="category in vm.items track by category.id" ui-sref="articleList({cat:category.slug})">
+    {{ category.name }}
+    <span class="badge badge-assertive">{{ category.count }}</span>
+  </ion-item>
+</ion-list>

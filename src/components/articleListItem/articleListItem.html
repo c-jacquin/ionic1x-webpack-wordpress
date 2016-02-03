@@ -1,0 +1,15 @@
+<div class="list card"  class="item-remove-animate item" style=overflow-x:hidden>
+  <div class="item">
+    <h2 ng-bind-html="vm.article.title.rendered"></h2>
+  </div>
+
+  <div class="item item-body">
+    <div ng-bind-html="::vm.article.excerpt.rendered"></div>
+    <p>
+      <button ui-sref="article({id:vm.article.id})" class="button button-raised button-block">
+        Lire l'article
+      </button>
+    </p>
+  </div>
+
+</div>
